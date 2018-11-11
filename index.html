@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> TV SHOWS </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron" id="header">
+            <h1> TV Shows</h1>
+        </div>
+
+        <div id="row">
+            <h4>Click the buttons to display GIPHYs of your favorite TV shows<br>Click the GIPHYs to stop and play<br>
+                Don't see your favorite show, Search to add more buttons.</h4>
+        </div>
+    </header>
+
+    <section>
+        <article>
+            <form class="form-inline" id="searchshow">
+                <div class="form-group">
+                    <label for="netflixInput">Search for a show</label>
+                    <input type="text" id="showInput">
+                </div>
+                <input id="addShow" type="submit" value="submit">
+            </form>
+
+            <div class="row">
+                <div class="btn-group inline pull-center">
+                    <button class="btn btn-warning" id="show" data-search="Shameless">Shameless</button>
+                    <button class="btn btn-warning" id="show" data-search="Grey's Anatomy">Grey's Anatomy</button>
+                    <button class="btn btn-warning" id="show" data-search="American Horror Story">American Horror Story</button>
+                    <button class="btn btn-warning" id="show" data-search="Black Mirror">Black Mirror</button>
+                    <button class="btn btn-warning" id="show" data-search="Atlanta">Atlanta</button>
+                    <div id="myButtons"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <span>
+                    <div id="placeGifHere"></div>
+                </span>
+            </div>
+        </article>
+    </section>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
